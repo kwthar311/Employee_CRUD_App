@@ -1,0 +1,57 @@
+    /* Custom CSS for animation */
+    /* Default styles */
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+  .table-responsive {
+    overflow-x: auto;
+  }
+  .table-responsive table {
+    width: 100%;
+  }
+}
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animated-table tbody tr {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    body,td,th{
+      background: linear-gradient(#496b92, #375d87);
+      font-family: 'Open Sans', sans-;
+      color:#fff;
+    }
+
+
+
+    a {
+      color: #e20756; /* Change this to your desired default color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    /* Change color when hovered */
+    a:hover {
+      color: white; /* Change this to your desired hover color */
+    }
+
+    /* Change color when clicked */
+    a:active {
+      color: white; /* Change this to your desired clicked color */
+    }
+
+    h2.text-center.mb-4 {
+      /* background: linear-gradient(#496b92, #375d87); */
+      font-family: 'Open Sans', sans-;
+      color: #fff;
+  }
+
+  .modal-backdrop.show {
+    display: none !important;
+}
